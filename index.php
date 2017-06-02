@@ -52,17 +52,7 @@ echo '
 echo '
 	<div id="row3" class="row"> 
 		<h3 class="text-center">L.O.A</h3>
-		<form>
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name">
-  </div>
-  <div class="form-group">
-    <label for=""></label>
-    <input type="text" class="form-control" id="pwd">
-  </div>
-  <button type="submit" class="btn btn-default">Submit L.O.A</button>
-</form>
+		
 	</div>
 ';
 //close all of main body
