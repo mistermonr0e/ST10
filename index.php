@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set("America/New_York");
 $Ctime = date("H:i");
+$checkDate = date("m/d/Y");
 // head tag and imports
 echo'
 <!DOCTYPE html>
@@ -52,17 +53,35 @@ echo '
 echo '
 	<div id="row3" class="row"> 
 		<h3 class="text-center">L.O.A</h3>
-		<form>
+	<div class="col-sm-6">
+		<form action="LOA.php" method="post">
   <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
+    <label for="email">Name:</label>
+    <input type="text" class="form-control" name="name">
   </div>
   <div class="form-group">
-    <label for="Reason">Reason:</label>
-    <input type="text" class="form-control" id="pwd">
+    <label for="Reason">Date Start:</label>
+    <input type="date" class="form-control" name="dateS">
+  </div>
+  <div class="form-group">
+    <label for="Reason">Date End:</label>
+    <input type="date" class="form-control" name="dateE">
+  </div>
+  <div class="form-group">
+    <textarea id="res" name="res" rows="10" cols="50">
+Reason for LOA, Can be anything I dont Care.
+</textarea>
   </div>
   <button id="submit" type="submit" class="btn btn-default">Submit</button>
 </form>
+	</div>
+	<div class="col-sm-6">
+	<h3>Recent LOAs</h3>
+	<br>
+	<ul> 
+		<li>'.$checkDate.'</li>
+	</ul>
+	</div>
 	</div>
 ';
 //close all of main body
