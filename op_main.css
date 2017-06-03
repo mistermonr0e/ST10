@@ -2,9 +2,19 @@
       background: #2A2E31;
       color: #e8cd3a;
 	 
-    }
+	}
+body{
       background-image: url(main.jpg);
     }
+.checkbox{
+		margin-left:20px;
+	}
+.form-group{
+		margin-left:20px;
+	}
+.form-control{
+		width: 200px;
+	}
 .row{
 	  border-radius:20px;
 	  margin:20px;
@@ -12,15 +22,14 @@
       background: #7a7975;
     }
 .navbar{
-	margin: 0px;
-}
+		margin: 0px;
+	}
 #clock{
-	color:white;
-}
+		color:white;
+	}
 #row1{
-	
-}
+		
+	}
 #row2{
-	
-	
-}
+		
+	}
